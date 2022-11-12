@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+
+:root{
+  --color-white: rgba(255, 255, 255, 1);
+  --color-dark: rgba(63, 63, 63, 1); 
+  --color-default: rgb(224, 224, 224);
+  --color-default-state: rgb(173, 173, 173);
+  --color-outline: rgba(61, 90, 254, 1);
+  --color-outline-state: rgba(41, 98, 255, 0.1);
+  --color-text: rgba(61, 90, 254, 1);
+  --color-disabled: rgba(224, 224, 224, 1);
+  --color-text-disabled: rgba(158, 158, 158, 1);
+  --color-primary: rgba(41, 98, 255, 1);
+  --color-primary-state: rgba(0, 57, 203, 1);
+  --color-secondary: rgba(69, 90, 100, 1);
+  --color-secondary-state: rgba(28, 49, 58, 1);
+  --color-danger: rgba(211, 47, 47, 1);
+  --color-danger-state: rgba(154, 0, 7, 1); 
+  --font-noto: 'Noto Sans JP', sans-serif;
+}
+
+@import "./partials/nav";
+@import "./partials/button";
+@import "./partials/footer";
+
+
+html {
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  border: none;
+}
+
+body{
+  font-family: var(--font-noto);
+}
+
+.btn-wrap h3{
+    margin-bottom: 5px;
+}
+
+h1{
+  font-size: 22px;
+}
+
+h3{
+    font-size: 14px;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+p{
+  font-size: 15px;
+}
+
+.link{
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: .2s ease;
+  &:hover{
+    color: var(--color-primary-state);
+  }
+}
+
+
+main{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+section{
+   padding: 10px 0;
+}
+
+.section-one, .section-two {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-one > *, .section-two > * {
+    flex: 1 1 300px;
+    margin: 5px;
+}
+
+.section-tree{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+    margin: 10px;
+}
+
+.section-four{
+    display: flex;
+}
+
+.btn-group .btn-wrap {
+    margin-bottom: 20px;
+}
+.btn-group{
+    margin: 20px 60px 0px 0px;
+}
+
+.btn-wrap{
+    margin-bottom: 10px;
+}

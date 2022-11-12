@@ -1,0 +1,9 @@
+.footer{
+    background-color: rgba(250, 251, 253, 1);
+
+    &__wrap{
+        max-width: 1000px;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,162 @@
+
+// GLOBAL  ------------------
+.btn{
+    // height: 36px;
+    font-family: var(--font-noto);
+    font-weight: 500;
+    font-size: 14px;
+    // padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s ease;
+    // display: flex;
+    align-items: center;
+    // align-content: center;
+}
+
+
+// SIZES  ------------------
+
+.btn-sm{
+    padding: 6px 12px;
+}
+
+.btn-md{
+    padding: 8px 16px;
+}
+
+.btn-lg{
+    // padding: 20px;
+    padding: 11px 22px;
+}
+
+
+// BOX SHADOW  ------------------
+.boxShadow-md{
+    box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+}
+
+.boxShadow-none{
+    box-shadow: none;
+}
+
+// DISABLED  ------------------
+.btn-disabled{
+    background-color: var(--color-disabled);
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+
+// DEFAULT  ------------------
+.btn-default{
+    background-color: var(--color-default);
+    color: var(--color-dark);
+}
+
+.btn-default:hover, .btn-default:focus{
+    background-color: var(--color-default-state);
+}
+
+.btn-default.active{
+    background-color: var(--color-default-state);
+}
+
+// PRIMARY  ------------------
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--color-white)
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--color-primary-state);
+}
+
+
+.btn-primary.active{
+    background-color: var(--color-primary-state);
+}
+
+// SECONDARY  ------------------
+.btn-secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-white)
+}
+
+.btn-secondary:hover, .btn-secondary:focus{
+    background-color: var(--color-secondary-state)
+}
+
+.btn-secondary.active{
+    background-color: var(--color-secondary-state)
+}
+
+// DANGER  ------------------
+.btn-danger{
+    background-color: var(--color-danger);
+    color: var(--color-white)
+}
+
+.btn-danger:hover, .btn-danger:focus{
+    background-color: var(--color-danger-state);
+}
+
+.btn-danger.active{
+    background-color: var(--color-danger-state);
+}
+
+
+// OUTLINE  ------------------
+.btn-outline{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-outline);
+    color: var(--color-outline);
+}
+
+.btn-outline:hover, .btn-outline:focus{
+    background-color: var(--color-outline-state);
+}
+
+.btn-outline.active{
+    background-color: var(--color-outline-state);
+}
+
+
+// TEXT  ------------------
+.btn-text{
+    background-color: inherit;
+    color: var(--color-text);
+}
+
+.btn-text:hover, .btn-text:focus{
+    background-color: var(--color-outline-state);
+}
+
+.btn-text.active{
+    background-color: var(--color-outline-state);
+}
+
+.btn-disabled.btn-text{
+    color: var(--color-text-disabled);
+    cursor: not-allowed;
+}
+
+
+
+// ICONS  ------------------
+
+.icon{
+    font-size: 16px;
+    line-height: inherit;
+}
+
+.icon-start{
+    float:left;
+    margin-right: 10px;
+}
+
+.icon-end{
+    float:right;
+    margin-left: 10px;
+}
+
